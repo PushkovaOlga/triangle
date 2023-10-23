@@ -9,5 +9,13 @@
 # **
 # *
 
-def triangle():
-    pass
+def triangle(n):
+    if n % 2 == 0:
+        raise ValueError("n должно быть нечетным натуральным числом")
+    for i in range(1, (n // 2) + 2):
+        print("*" * i)
+    for i in range(n // 2, 0, -1):
+        print("*" * i)
+if __name__ == "__main__":
+    n = int(input("Введите натуральное нечетное число n: "))
+    triangle(n)
