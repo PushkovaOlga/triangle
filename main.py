@@ -8,6 +8,15 @@
 # ***
 # **
 # *
+def triangle(n):
+    if n % 2 ==0:
+        print("Основание треугольника должно быть нечетное число")
+        return
+    for i in range(1,n,1):
+        line = "*" * i
+        print(line)
+    for i in range(-n,1,1):
+        line= "*" * -i
+        print(line)
 
-def triangle():
-    pass
+triangle(int(input("Основание треугольника:\n ")))
