@@ -9,5 +9,12 @@
 # **
 # *
 
-def triangle():
-    pass
+def triangle(n):
+    if n % 2 ==0:
+        print("Основание треугольника должно быть четное число")
+        return
+    for i in range(n):
+        line = "*" * (i*2+1)
+        print(line.center(n))
+
+triangle(3)
